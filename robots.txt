@@ -1,0 +1,54 @@
+# robots.txt for Stetson LLP
+# Website: https://stetsonllp.com
+
+User-agent: *
+Allow: /
+
+# Disallow ONLY system directories and files
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /layouts/
+Disallow: /config/
+Disallow: /vendor/
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /backup/
+Disallow: /assets/inc/
+Disallow: /assets/fonts/
+Disallow: /assets/scss/
+Disallow: /error/
+Disallow: /docs/
+
+# Disallow system PHP files (but NOT your content pages)
+Disallow: /contact-handler.php
+Disallow: /config.php
+Disallow: /database.php
+Disallow: /functions.php
+Disallow: /test.php
+Disallow: /phpinfo.php
+
+# Session and security
+Disallow: /*session*
+Disallow: /*auth*
+Disallow: /*login*
+Disallow: /*register*
+
+# Version control
+Disallow: /.git/
+Disallow: /.svn/
+
+# Bad bots
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://stetsonllp.com/sitemap.xml
+
+# Host
+Host: https://stetsonllp.com
